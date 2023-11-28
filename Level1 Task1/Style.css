@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+}
+/*  Styling header tag */
+header{
+    animation: changeimage 30s infinite;
+}
+
+/* start styling nav tag */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 9vh;
+    background: rgba(0, 0, 0, 0.1);
+}
+/* Style nav .logo */
+nav .logo{
+    text-transform: uppercase;
+    color: white;
+    font-size: 24px;
+    padding: 40px;
+    width: 20%;
+    /* position: relative;
+    z-index: 10; */
+}
+nav .menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bolder;
+    font-size: 25px;
+    position: relative;
+    z-index: 10;
+}
+nav .menu a:hover{
+    color:#00b894 ;
+    
+}
+#icon{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    display: none;
+}
+
+/* nav .menu a:first-child{
+   color: #00b894;;
+} */
+main{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+section h2{
+    font-size: 40px;
+    font-weight: bolder;
+    word-spacing: 4px;
+    text-shadow: 1px 1px 2px black;
+    /* position: relative; */
+    /* left:145px; */
+    text-align: center;
+}
+section h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700px;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 5px black;
+    margin: 30px 0px 20px 0px;
+}
+section p{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    padding: 12px 180px;
+    margin: 0 0 25px 0px;
+
+}
+section a{
+    position: relative;
+    left: 150px;
+    top: 30px;
+    margin-right: 40px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    outline: none;
+    font-weight: 500;
+    background:#00b894;
+    color: white;
+    transition: all .5s ease;
+}
+.btnone{
+    background-color: #fff;
+    color: #000;
+}
+section.btntwo{
+    background:#00b894;
+    color: white;
+}
+section .btnone:hover{
+    background-color:aqua;
+    color: #000;
+}
+section .btntwo:hover{
+    background-color:rgb(253, 185, 196);
+    color: #000;
+}
+.change_content:after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    background:#00b894;
+}
+@keyframes changetext{
+    0%{content:"Darjeeling";}
+    10%{content:"Agra";}
+    20%{content:"Jaipur";}
+    30%{content:"Hyderabad";}
+    40%{content:"Chennai";}
+    50%{content:"Bhubaneshwar";}
+    60%{content:"Delhi";}
+    70%{content:"Mumbai";}
+    80%{content:"Goa";}
+    90%{content:"Patna";}
+    100%{content:"Bhopal";}
+}
+
+@keyframes changeimage
+{
+    /* 0%{
+        background: url(Image/Dar.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    }   
+    10%{
+        background: url(Image/taj\ mahal.webp);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    }  
+    20%{
+        background: url(Image/Jaipur.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position:center;
+    } 
+    30%{
+        background: url(Image/Hyderabad.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    } 
+    40%{
+        background: url(Image/Chennai.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    } 
+    50%{
+        background: url(Image/Bhubaneswar.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    } 
+    60%{
+        background: url(Image/Delhi.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    } 
+    70%{
+        background: url(Image/Mumbai.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    } 
+    80%{
+        background: url(Image/Goa.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    } 
+    90%{
+        background: url(Image/patna2.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    } 
+    100%{
+        background: url(Image/Bhopal.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+    }  */
+    
+    0%{
+        background: url(Image/taj\ mahal.webp);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    50%{
+        background: url(Image/Mumbai.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }  
+    100%{
+        background: url(Image/Goa.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }   
+}
+
+@media only screen and (max-width:900px){
+   
+    nav  .menu{
+      width: 60%;
+    }
+  
+    section h2{
+        font-size: 35px;
+        top: 30px;
+    }
+    section h1{
+        font-size: 43px;
+        bottom: 20px;
+    }
+    section a{
+        position: relative;
+        left: 26%;
+        margin-right: 20px;
+    }
+
+}
+@media only screen and (max-width:730px)
+{
+    nav .menu{
+        width: 75%;
+    }
+    section{
+        position: absolute;
+        top: 20%;
+    }
+    section h2{
+        font-size: 31px;
+        top: 30px;
+    }
+    section h1{
+        font-size: 38px;
+    }
+    section p
+    {
+        text-align: center;
+        font-size: 25px;
+    }
+    section a{
+        position: relative;
+        left: 26%;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width:600px)
+{
+    nav {
+        height: 100vh;
+        background-color: #00b894;
+        position: relative;
+        z-index: 5;
+    }
+    nav .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: blue;
+        height: 100vh;
+        /* display: none; */
+    }
+    #icon{
+        display: block;
+        margin-right: 20px;
+        position: relative;
+        z-index: 10;
+        bottom: 45%;
+    }
+    .logo{
+        position: relative;
+        bottom: 45%;
+    }
+
+}
